@@ -1,0 +1,48 @@
+body{
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.game-start, .game-map, .game-result {
+    position: relative;
+}
+
+.game-start {
+    width: 25%;
+    background-color: red;
+}
+
+.game-map {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: dimgrey;
+    border-right: 13px solid white;
+    border-left: 13px solid white;
+}
+
+.lines {
+    position: absolute;
+    border: 5px dashed white;
+    height: 100%;
+}
+
+.lines:nth-child(1){
+    right: 33%;
+}
+
+
+.lines:nth-child(2){
+    left: 33%;
+}
+
+
+.game-result {
+    width: 25%;
+    background-color: green;
+}
+
